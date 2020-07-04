@@ -9,7 +9,7 @@ function App() {
        <h1>
          Hello React
        </h1>
-       <Form city="Janesville" />
+       <Form city="Washington DC" />
       </header>
     </div>
   );
