@@ -1,0 +1,32 @@
+.button {
+    display: inline-block;
+    width: 225px;
+    margin: 15px auto;
+    padding: 10px 15px;
+    border-radius: 7px;
+    position: relative;
+    left: 50px;
+    right: 65px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #f47757;
+    border: 1px solid #f47757;
+  }
+  .button:hover {
+    color: #f47757;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 250ms ease-out;
+  }
+  input {
+    display: block;
+    margin: 0px auto;
+    width: 550px;
+    padding: 10px 15px;
+    font-size: 18pt;
+    border-radius: 7px;
+  }
+  

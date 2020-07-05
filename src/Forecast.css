@@ -1,0 +1,24 @@
+h4 {
+    color: #cfd8dc;
+    padding: 10px 15px;
+    display: block;
+  }
+  .time {
+    color: #cfd8dc;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  .tempCondition {
+    color: #cfd8dc;
+    padding: 10px 15px;
+    text-transform: capitalize;
+  }
+  .upcomingIcon {
+    padding: 5px 10px;
+  }
+  .upcoming:hover {
+    background: #455a64;
+    border: 1px solid #455a64;
+    cursor: pointer;
+    transition: 400ms ease-out;
+  }
