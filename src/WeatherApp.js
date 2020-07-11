@@ -12,7 +12,7 @@ export default function WeatherApp() {
       <div className="weather-app">
         <Search />
         <hr />
-        <CurrentWeather />
+        <CurrentWeather defaultCity="Madison" />
         <hr />
         <Forecast />
       </div>

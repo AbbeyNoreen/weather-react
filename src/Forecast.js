@@ -1,7 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
+import axios from "axios";
 import "./Forecast.css";
 
 export default function Forecast() {
+  const [temperature, setTemperature] = useState(null);
+  const [description, setDescription] = useState(null);
+ 
+function handleResponse(response) {
+  setTemperature(Math.round(response.data.main.temp));
+  setDescription(response.data.weather[0].description);
+}
+
+  const apiKey = "ee003aab68bcab21af649210b2a07f93"
+  let city = "Madison"
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(handleResponse);
+
+
   return (
     <div className="row">
       <div className="col">
@@ -12,8 +27,8 @@ export default function Forecast() {
           <div className="upcomingIcon">
             <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="" />
             <h4 className="tempCondition">
-              83 °F <br />
-              Rainy
+              {temperature} °F <br />
+              {description}
             </h4>
           </div>
         </div>
@@ -26,8 +41,8 @@ export default function Forecast() {
           <div className="upcomingIcon">
             <img src="http://openweathermap.org/img/wn/02n@2x.png" alt="" />
             <h4 className="tempCondition">
-              81 °F <br />
-              Cloudy
+            {temperature} °F <br />
+              {description}
             </h4>
           </div>
         </div>
@@ -40,8 +55,8 @@ export default function Forecast() {
           <div className="upcomingIcon">
             <img src="http://openweathermap.org/img/wn/11n@2x.png" alt="" />
             <h4 className="tempCondition">
-              81 °F <br />
-              Stormy
+            {temperature} °F <br />
+              {description}
             </h4>
           </div>
         </div>
@@ -54,8 +69,8 @@ export default function Forecast() {
           <div className="upcomingIcon">
             <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" />
             <h4 className="tempCondition">
-              85 °F <br />
-              Sunny
+            {temperature} °F <br />
+              {description}
             </h4>
           </div>
         </div>
