@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer>
       <p>
-        <a href="https://github.com/AbbeyNoreen">Open-source code </a>
-        by Abbey Noreen
+        <a href="https://github.com/AbbeyNoreen" target="_blank">Open-source code </a>
+        by <a href="https://linkedin.com/in/abbeynoreen" target="_blank">Abbey Noreen</a>
       </p>
     </footer>
   );

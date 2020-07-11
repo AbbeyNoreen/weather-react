@@ -3,4 +3,5 @@ footer {
     font-size: 12pt;
     font-family: "Architects Daughter", cursive;
     text-transform: capitalize;
+    max-width: 750px;
   }
