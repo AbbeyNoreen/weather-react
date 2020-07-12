@@ -8,7 +8,6 @@ export default function CurrentWeather(props) {
   const [currentWeather, setCurrentWeather] = useState({});
 
 function handleResponse(response) {
-  setReady(true);
   setCurrentWeather({
     city: response.data.name,
     temperature: Math.round(response.data.main.temp),
@@ -23,6 +22,7 @@ function handleResponse(response) {
         id="current-icon"
       />
     )});
+    setReady(true);
 }
 
 if (ready) {
