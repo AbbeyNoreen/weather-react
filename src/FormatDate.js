@@ -11,6 +11,9 @@ let minutes = props.date.getMinutes();
 if (minutes < 10) {
     minutes = `0${minutes}`;
 }
-
-    return `${day} | ${month} ${date} | ${hours}:${minutes}`;
+return (
+    <div>
+{day} | {month} {date} | {hours}:{minutes}
+    </div>
+);
 }
