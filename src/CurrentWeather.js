@@ -1,19 +1,20 @@
 import React, {useState} from "react";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 import "./CurrentWeather.css";
 
 export default function CurrentWeather(props) {
   const [ready, setReady] = useState(false);
   const [currentWeather, setCurrentWeather] = useState({});
 
- 
 function handleResponse(response) {
+
   setReady(true);
   setCurrentWeather({
     city: response.data.name,
     temperature: Math.round(response.data.main.temp),
     description: response.data.weather[0].description,
-    date: "Thur | Jun 18 | 22:55",
+    date: new Date(response.data.dt * 1000),
     humidity: response.data.main.humidity,
     wind: Math.round(response.data.wind.speed),
     image: (
@@ -34,21 +35,23 @@ if (ready) {
       <div className="col-6">
         <h1 id="city">{currentWeather.city}</h1>
         <h3>
-          <div class="currentTemperature">
+          <div className="currentTemperature">
             <span id="temp-value"> {currentWeather.temperature} </span>
-            <a href="/" class="farUnit">
+            <a href="/" className="farUnit">
               °F
             </a>{" "}
             |
-            <a href="/" class="celUnit">
+            <a href="/" className="celUnit">
               {" "}
               °C
             </a>
             <br />
           </div>
-          <span id="description">{currentWeather.description}</span>
+          <span className="description">{currentWeather.description}</span>
           <br />
-          <div id="current-date-time">{currentWeather.date}</div>
+          <div className="current-date-time">
+            <FormatDate date={currentWeather.date} />
+          </div>
         </h3>
         <h4>
           <em>
@@ -56,7 +59,7 @@ if (ready) {
             {currentWeather.humidity}%
             <br />
             Wind: <span id="wind" />
-            {currentWeather.wind}mph
+            {currentWeather.wind} mph
           </em>
         </h4>
       </div>

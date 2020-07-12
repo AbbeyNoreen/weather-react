@@ -3,7 +3,7 @@ import "./Search.css";
 
 export default function Search() {
   return (
-    <form id="search-form">
+    <form className="search-form">
       <input
         type="search"
         placeholder="Enter City Here"
@@ -15,7 +15,7 @@ export default function Search() {
         <div className="col-6" id="current-button">
           <input type="button" value="Current" className="button" />
         </div>
-        <div class="col-6" id="search-button">
+        <div className="col-6" id="search-button">
           <input type="submit" value="Search" className="button" />
         </div>
       </div>
