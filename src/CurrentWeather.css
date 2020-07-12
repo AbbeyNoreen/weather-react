@@ -11,9 +11,7 @@ h1 {
     display: block;
     padding: 5px;
   }
-  .currentWeather {
-    color: #f47757;
-    font-size: 185px;
+  .currentWeather canvas {
     padding: 10px 15px;
     display: block;
   }
@@ -23,15 +21,11 @@ h1 {
     text-decoration: none;
     color: #cfd8dc;
   }
-  .farUnit:hover {
+  .farUnit:hover, .celUnit:hover {
     color: #f47757;
     text-decoration: none;
   }
-  .celUnit:hover {
-    color: #f47757;
-    text-decoration: none;
-  }
-  
+ 
   h3 {
     color: #cfd8dc;
     padding: 10px 15px;

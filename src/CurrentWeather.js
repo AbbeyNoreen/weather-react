@@ -15,12 +15,7 @@ function handleResponse(response) {
     date: new Date(response.data.dt * 1000),
     humidity: response.data.main.humidity,
     wind: Math.round(response.data.wind.speed),
-    image: 
-      <img
-        src="http://openweathermap.org/img/wn/03n@2x.png"
-        alt= {currentWeather.description}
-        id="current-icon"
-      />
+    iconUrl: response.data.weather[0].icon,
     });
 }
 
