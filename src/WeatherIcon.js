@@ -23,11 +23,6 @@ const codeMapping = {
     "50n": "FOG"
 };
         return(
-            <ReactAnimatedWeather
-            icon={codeMapping[props.code]}
-            color="#f47757"
-            size={225}
-            animate={true}
-          /> 
+            <ReactAnimatedWeather icon={codeMapping[props.code]} color="#f47757" size={225} animate={true} /> 
         );
         }
