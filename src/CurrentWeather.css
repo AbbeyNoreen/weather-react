@@ -5,14 +5,9 @@ h1 {
     text-transform: capitalize;
     font-size: 42px;
   }
-  #current-icon {
-    width: 250px;
-    max-height: 100%;
-    display: block;
-    padding: 5px;
-  }
+  
   .currentWeather canvas {
-    padding: 10px 15px;
+    padding: 20px;
     display: block;
   }
   .currentTemperature,

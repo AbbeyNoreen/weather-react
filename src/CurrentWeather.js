@@ -40,7 +40,7 @@ if (currentWeather.ready) {
       <input
         type="search"
         placeholder="Enter City Here"
-        autoComplete="off"
+        //autoComplete="off"
         autoFocus="on"
         id="city-form"
         onChange={handleChangeCity}
