@@ -27,7 +27,7 @@ setUnit("celsius");
         </div>
         );
     } else {
-        let celsius = (props.fahrenheit) - 32 * 5/9;
+        let celsius = ((props.fahrenheit) - 32) * 5/9;
         return (
             <div>
         <span id="temp-value"> {Math.round(celsius)} </span>
