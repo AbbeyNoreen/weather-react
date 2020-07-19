@@ -9,10 +9,7 @@ export default function WeatherApp() {
   return (
     <div className="container">
       <div className="weather-app">
-      
         <CurrentWeather defaultCity="Madison" />
-        <hr />
-        <Forecast />
       </div>
       <Footer />
     </div>

@@ -7,7 +7,7 @@ h1 {
   }
   
   .currentWeather canvas {
-    padding: 20px;
+    padding: 5px;
     display: block;
   }
   .currentTemperature,

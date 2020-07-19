@@ -17,12 +17,11 @@ export default function WeatherInfo(props) {
       <h3>
         <div className="currentTemperature">
           <WeatherTemp fahrenheit={props.data.temperature} />
-          <br />
-        </div>
         <span className="description">{props.data.description}</span>
         <br />
-        <div className="current-date-time">
+        <span className="current-date-time">
           <FormatDate date={props.data.date} />
+          </span>
         </div>
       </h3>
       <h4>
