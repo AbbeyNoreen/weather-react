@@ -2,12 +2,13 @@ import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemp from "./WeatherTemp";
+import src from "*.bmp";
 
 export default function WeatherInfo(props) {
     return (
     <div className="row">
     <div className="col-6">
-      <div className="currentWeather">
+      <div className="weatherIcon">
         <WeatherIcon code={props.data.iconUrl} />
         </div>
         

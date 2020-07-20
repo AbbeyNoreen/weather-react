@@ -6,9 +6,11 @@ h1 {
     font-size: 42px;
   }
   
-  .currentWeather canvas {
+  .weatherIcon canvas {
     padding: 5px;
     display: block;
+    text-align: center;
+    size: 200px;
   }
   .currentTemperature,
   .farUnit,
