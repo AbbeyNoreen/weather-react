@@ -11,3 +11,10 @@
 hr {
   border: 2.5px solid #fff;
 }
+footer {
+  color: #212121;
+  font-size: 12pt;
+  font-family: "Architects Daughter", cursive;
+  text-transform: capitalize;
+  max-width: 750px;
+}

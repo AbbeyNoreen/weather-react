@@ -1,6 +1,5 @@
 import React from "react";
 import "./WeatherApp.css";
-import Footer from "./Footer";
 import CurrentWeather from "./CurrentWeather";
 
 export default function WeatherApp() {
@@ -9,7 +8,12 @@ export default function WeatherApp() {
       <div className="weather-app">
         <CurrentWeather defaultCity="Madison" />
       </div>
-      <Footer />
+      <footer>
+      <p>
+        <a href="https://github.com/AbbeyNoreen" target="_blank" rel="noopener noreferrer">Open-source code </a>
+        by <a href="https://linkedin.com/in/abbeynoreen" target="_blank" rel="noopener noreferrer">Abbey Noreen</a>
+      </p>
+    </footer>
     </div>
   );
 }
