@@ -47,14 +47,9 @@ if (currentWeather.ready) {
         id="city-form"
         onChange={handleChangeCity}
       />
-      <div className="row">
-        <div className="col-6" id="current-button">
-          <input type="button" value="Current" className="button" />
-        </div>
-        <div className="col-6" id="search-button">
+        <div id="search-button">
           <input type="submit" value="Search" className="button" />
         </div>
-      </div>
     </form>
     <hr />
 <WeatherInfo data={currentWeather} />

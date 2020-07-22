@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon";
+import ForecastWeatherIcon from "./ForecastWeatherIcon";
 
 export default function WeatherForecastPreview(props) {
     return (
@@ -11,7 +11,7 @@ export default function WeatherForecastPreview(props) {
             </strong>
           </h4>
           <div className="newIcon">
-          <WeatherIcon code={props.data.weather[0].icon} />
+          <ForecastWeatherIcon code={props.data.weather[0].icon} />
             </div>
             <h4 className="temp">
               {Math.round(props.data.main.temp)} °F

@@ -5,12 +5,10 @@ h1 {
     text-transform: capitalize;
     font-size: 42px;
   }
-  
-  .weatherIcon canvas {
-    padding: 5px;
-    display: block;
+  .weatherIcon {
+    padding: 10px;
+    display: 0 auto;
     text-align: center;
-    size: 200px;
   }
   .currentTemperature,
   .farUnit,
@@ -60,7 +58,7 @@ h1 {
   input {
     display: block;
     margin: 0px auto;
-    width: 550px;
+    width: 350px;
     padding: 10px 15px;
     font-size: 18pt;
     border-radius: 7px;
