@@ -11,8 +11,8 @@ export default function WeatherApp() {
       <footer>
       <p>
         <a href="https://github.com/AbbeyNoreen" target="_blank" rel="noopener noreferrer">Open-source code </a>
-        by <a href="https://linkedin.com/in/abbeynoreen" target="_blank" rel="noopener noreferrer">Abbey Noreen</a>
-      </p>
+        by <a href="https://linkedin.com/in/abbeynoreen" target="_blank" rel="noopener noreferrer">Abbey Noreen</a> + hosted on <a href="https://quirky-noyce-b9c45a.netlify.app/" target="_blank" rel="noopener noreferrer"> Netlify</a> 
+      </p> 
     </footer>
     </div>
   );
